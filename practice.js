@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name: 'Brittany',
+  age: 25
+};
+alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Years and Years',
+  food: 'Cheese',
+  person: 'Blake',
+  book: 'The Art of Racing in the Rain',
+  movie: 'Odd Thomas',
+  holiday: 'Christmas'
+};
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Nissan Altima';
+favoriteThings.brand = 'Apple';
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +69,10 @@
 */
 
 //Code here
-
+var backPack = {};
+var item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'gray';
 
 
 /*
@@ -64,7 +80,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +113,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -121,7 +138,7 @@ var user2 = {
 
 //Code Here
 
-
+var methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -129,7 +146,9 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = () => alert('hello');
 
+methodCollection.logHello = () => console.log('hello');
 
 
 /*
@@ -138,7 +157,8 @@ var user2 = {
 
 //Code Here
 
-
+methodCollection.alertHello;
+methodCollection.logHello;
 
 ////////// PROBLEM 6 //////////
 
@@ -148,7 +168,13 @@ var user2 = {
 */
 
 //Code Here
-
+var makePerson = (name, birthday, ssn) => {
+  return {
+    name,
+    birthday,
+    ssn
+  }
+};
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +185,12 @@ var user2 = {
 */
 
 //Code Here
-
+var makeCard = (cardNumber, expirationDate, securityCode) => {
+  var creditCard = {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+  return creditCard;
+};
 
